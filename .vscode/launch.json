@@ -12,9 +12,21 @@
         },
         {
             "type": "java",
-            "name": "Debug (Launch)-test",
+            "name": "Debug (Launch)-Calendar_test",
             "request": "launch",
-            "mainClass": "test"
+            "mainClass": "Calendar_test"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MessageFormat_test",
+            "request": "launch",
+            "mainClass": "MessageFormat_test"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-NumberFormat_test",
+            "request": "launch",
+            "mainClass": "NumberFormat_test"
         }
     ]
 }
