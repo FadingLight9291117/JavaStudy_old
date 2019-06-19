@@ -3,7 +3,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 /**
- * SimpleDataFormat 工厂模式 parse格式化字符串为时间对象 format将时间格式化为字符串
+ * SimpleDataFormat类的使用 工厂模式 parse格式化字符串为时间对象 format将时间格式化为字符串
  */
 public class SimpleDataTest {
 
