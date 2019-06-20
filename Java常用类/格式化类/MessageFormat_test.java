@@ -7,14 +7,14 @@ public class MessageFormat_test {
 
     public static void main(String[] args) {
         String message = "{0}{1}{2}";
-        Object[] array = new Object[] { 'a', 'b', 'c' };
+        Object[] array = new Object[] { 'a', 2, 'C' };
         String value = MessageFormat.format(message, array);
         System.out.println(value);
 
-        message = "{0,number,#.##}";
-        array = new Object[] { new Double(3.1415) };
+        message = "{0,number,#.##} is a good number";
+        array = new Object[] { new Double("3.1415") };
         value = MessageFormat.format(message, array);
         System.out.println(value);
-        
+
     }
 }
