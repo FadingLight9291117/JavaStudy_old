@@ -1,8 +1,7 @@
+import java.time.LocalDateTime;
 import java.time.LocalDate;
 import java.time.LocalTime;
-import java.time.LocalDateTime;
 import java.time.Instant;
-
 /**
  * Time_test
  */
@@ -21,6 +20,6 @@ public class Time_test {
         // 当前时间戳
         Instant instant = Instant.now();
         System.out.println(instant);
-    }
 
+    }
 }

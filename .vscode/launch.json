@@ -6,27 +6,28 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - StringBuffer_test",
+            "request": "launch",
+            "mainClass": "StringBuffer_test",
+            "projectName": "JavaStudy_6e23821c"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
             "mainClass": "${file}"
         },
         {
             "type": "java",
-            "name": "Debug (Launch)-Calendar_test",
+            "name": "Debug (Launch)-StringBuilder_test",
             "request": "launch",
-            "mainClass": "Calendar_test"
+            "mainClass": "StringBuilder_test"
         },
         {
             "type": "java",
-            "name": "Debug (Launch)-MessageFormat_test",
+            "name": "Debug (Launch)-String_test",
             "request": "launch",
-            "mainClass": "MessageFormat_test"
-        },
-        {
-            "type": "java",
-            "name": "Debug (Launch)-NumberFormat_test",
-            "request": "launch",
-            "mainClass": "NumberFormat_test"
+            "mainClass": "String_test"
         }
     ]
 }

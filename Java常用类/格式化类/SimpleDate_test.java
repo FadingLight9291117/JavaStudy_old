@@ -3,12 +3,13 @@ import java.util.Calendar;
 import java.util.Date;
 
 /**
- * SimpleDataFormat类的使用 工厂模式 parse格式化字符串为时间对象 format将时间格式化为字符串
+ * SimpleDateFormat类的使用 工厂模式 parse格式化字符串为时间对象 format将时间格式化为字符串
  */
-public class SimpleDataTest {
+public class SimpleDate_test {
 
     public static void main(String[] args) {
 
+        // 将时间对象格式化为字符串
         Calendar cal = Calendar.getInstance();
         Date now = cal.getTime();
         System.out.println(now);
@@ -25,6 +26,11 @@ public class SimpleDataTest {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        System.out.println(format.format(d));
+        System.out.println(d);
+
+        System.out.println(now);
+        java.sql.Date newDate = new java.sql.Date(now.getTime());
+        System.out.println(newDate);
+        System.out.println(format.format(newDate));
     }
 }
