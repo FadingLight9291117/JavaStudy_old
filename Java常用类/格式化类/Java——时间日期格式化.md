@@ -4,6 +4,7 @@
 
     抽象类，工厂方法。
     用于java.util.Date和java.sql.Date
+    线程不安全
 
 - 字符串格式化为时间对象
 
@@ -47,7 +48,32 @@
 
     java.time.format.DateTimeFormatter
     用于java.time类中的时间日期格式化
+    线程安全
 
 - 字符串转化为时间对象
 
-    
+    .parse()
+
+    ```java
+        // 将字符串转化为时间
+        String dateStr = "2016年10月25日";
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy年MM月dd日");
+        LocalDate date = LocalDate.parse(dateStr, formatter);
+        System.out.println(date);
+
+        //结果：2016-10-25
+    ```
+- 时间对象格式化为字符串
+
+    .format()
+
+    ```java
+        // 将日期转化为字符串
+        LocalDateTime now = LocalDateTime.now();
+        DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("yyyy年MM月dd日 hh:mm:ss");
+        String nowStr = now.format(formatter2);
+        System.out.println(nowStr);
+
+        //j结果：2019年06月20日 04:38:41
+    ```
+

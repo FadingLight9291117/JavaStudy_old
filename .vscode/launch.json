@@ -12,9 +12,9 @@
         },
         {
             "type": "java",
-            "name": "Debug (Launch)-StringBuffer_test",
+            "name": "Debug (Launch)-Calendar_test",
             "request": "launch",
-            "mainClass": "StringBuffer_test"
+            "mainClass": "Calendar_test"
         }
     ]
 }
