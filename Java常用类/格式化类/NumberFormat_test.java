@@ -27,9 +27,28 @@ public class NumberFormat_test {
         System.out.println(df1.format(0.006));
         System.out.println(df2.format(0.006));
 
-        // 1,232,132格式
-        double f = 1232132;
-        DecimalFormat df3 = new DecimalFormat(",###");
-        System.out.println(df3.format(f));
+        System.out.println("=================");
+
+        double pi = 3.1415926;
+        // 取一位整数
+        System.out.println(new DecimalFormat("0").format(pi));
+        // 取一位整数和两位小数
+        System.out.println(new DecimalFormat("0.00").format(pi));
+        // 取两位整数和三位小数,整数不足一0填补
+        System.out.println(new DecimalFormat("00.000").format(pi));
+        // 取所有整数部分
+        System.out.println(new DecimalFormat("#").format(pi));
+        // 以百分比方式计数，并取两位小数
+        System.out.println(new DecimalFormat("0.##%").format(pi / 100));
+
+        long c = 299792458;
+        // 显示为科学计数法，并取五位小数
+        System.out.println(new DecimalFormat("0.00000E0").format(c));
+        // 显示为两位整数的科学计数法，并取四位小数
+        System.out.println(new DecimalFormat("00.0000E0").format(c));
+        // 每三位以逗号进行分隔
+        System.out.println(new DecimalFormat(",###").format(c));
+        // 将格式化数字嵌入文本
+        System.out.println(new DecimalFormat("光速的大小为,###m/s").format(c));
     }
 }
