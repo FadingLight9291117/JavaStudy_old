@@ -9,7 +9,7 @@ public class NumberFormat_test {
         DecimalFormat df1, df2;
 
         System.out.println("整数部分为0的情况，0/#的区别");
-        // 整数部分为0，#认为整数不存在，可不写；0认为没有，但至少写一位，写0
+        // 整数部分为#认为整数不存在，可不写；0认为没有，但至少写一位，写0
         df1 = new DecimalFormat("#.00");
         df2 = new DecimalFormat("0.00");
 

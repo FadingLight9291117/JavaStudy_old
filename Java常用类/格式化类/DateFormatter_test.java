@@ -18,7 +18,7 @@ public class DateFormatter_test {
         // 将日期转化为字符串
         LocalDateTime now = LocalDateTime.now();
         System.out.println(now);
-        DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("yyyy年MM月dd日");
+        DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("zz");
         String nowStr = now.format(formatter2);
         System.out.println(nowStr);
     }

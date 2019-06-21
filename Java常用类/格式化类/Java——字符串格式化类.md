@@ -1,5 +1,18 @@
 # 字符串格式化类
 
+```mermaid
+        graph TD
+        A["{0}是一个{1}"]
+        B["我，人"]
+        C["MessageFormat.format(message,array)"]
+        D["我是一个人"]
+        A--参数-->C
+        B--参数-->C
+        C--返回值-->D
+
+
+```
+
 ## MessageFormat类
 
 - 支持多个参数-值对位复制文本
