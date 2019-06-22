@@ -12,7 +12,7 @@ public class MessageFormat_test {
         System.out.println(value);
 
         message = "{0,number,#.##} is a good number";
-        array = new Object[] { new Double("3.1415") };
+        array = new Object[] { 3.1415926 };
         value = MessageFormat.format(message, array);
         System.out.println(value);
 
