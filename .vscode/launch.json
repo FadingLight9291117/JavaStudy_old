@@ -12,9 +12,9 @@
         },
         {
             "type": "java",
-            "name": "Debug (Launch)-Calendar_test",
+            "name": "Debug (Launch)-Time_test",
             "request": "launch",
-            "mainClass": "Calendar_test"
+            "mainClass": "Time_test"
         }
     ]
 }
