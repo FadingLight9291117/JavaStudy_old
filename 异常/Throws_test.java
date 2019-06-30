@@ -1,5 +1,10 @@
 /**
- * Throws_test
+ * 这个类测试函数定义时Throws的用法
+ * Throws
+ * 
+ * @author 车亮召
+ * 
+ * 
  */
 public class Throws_test {
 

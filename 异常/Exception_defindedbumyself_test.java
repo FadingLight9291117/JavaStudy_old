@@ -1,7 +1,10 @@
 /**
- * Exception_defindedbumyself_test
+ * 这个类测试如何自定义异常类
+ * 
+ * @author 车亮召
  */
 public class Exception_defindedbumyself_test extends Exception {
+
     public Exception_defindedbumyself_test() {
         super();
     }
